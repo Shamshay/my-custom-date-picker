@@ -1,0 +1,75 @@
+.calander{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.grid-year-control{
+    display: grid;
+    grid-template-areas: 'left main main main main main main main main main main right';
+    background-color: rgb(255, 255, 255);
+}
+
+.grid-container{
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.grid-item-year{
+    background-color: rgb(83, 206, 165);
+    border: 1px transparent;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    grid-area: main;
+}
+
+.grid-item-month{
+    background-color: rgb(130, 255, 213);
+    border: 1px transparent;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.grid-item-day{
+    background-color: rgb(255, 255, 255);
+    border: 1px transparent;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.grid-item-arrow-left{
+    background-color: rgb(83, 206, 165);
+    padding: 5px;
+    grid-area: left;
+    text-align: left;
+}
+
+.grid-item-arrow-right{
+    background-color: rgb(83, 206, 165);
+    padding: 5px;
+    grid-area: right;
+    text-align: right;
+}
+
+.leftarrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.rightarrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
